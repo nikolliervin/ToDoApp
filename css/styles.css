@@ -38,6 +38,7 @@ button{
     padding: .5rem 1rem;
     margin: 2rem;
     cursor: pointer;
+    transition: all .6s;
 }
 input::placeholder{
     opacity: .6;
