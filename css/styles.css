@@ -12,6 +12,7 @@ html{
 }
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 4rem;
@@ -23,6 +24,7 @@ input{
     border-radius:3px;
     padding: 0.5rem 1rem;
     background: var(--background-primary);
+    color: var(--background-text);
    
 }
 input:active{
@@ -44,9 +46,7 @@ input::placeholder{
     background-color: var(--background-secondary);
     padding: 5rem;
     border-radius: 8px;
-    
-
-
+    transition: all .6s;
 }
 h1{
     margin-top: 0;
@@ -54,17 +54,19 @@ h1{
 h2{
     margin: 0;
 }
-.clearTask{
+
+.clearBtn{
     margin-left: 0;
 }
 
 .todoList{
     display: flex;
     justify-content: space-between;
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 0;
     align-items: center;
     padding: .5rem;
     flex-wrap: wrap;
+    border-bottom:1px solid #3D444D; ;
 
 }
 .deleteTask{
@@ -79,6 +81,31 @@ h2{
 }
 .pText{
     color: var(--background-text);
+    border-width: 1px 50px;
+    padding-bottom: .5rem;
 }
-
-
+.dateP{
+    opacity: .7;
+}
+footer{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 30px;
+    margin: .8rem;
+}
+a{
+    color: var(--background-text);
+    text-decoration:none;
+}
+button:hover{
+background: #4d5560;
+transform: scale(1.1);
+}
+.container:hover{
+    transform: scale(1.1);
+}
