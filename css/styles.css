@@ -116,3 +116,10 @@ transform: scale(1.1);
     transform: scale(1.2);
     transform: rotate(360deg);
 }
+
+@media screen and (min-width:400px) {
+    .btn{
+        margin-left: 0;
+    }
+    
+}
